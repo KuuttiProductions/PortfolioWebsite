@@ -5,14 +5,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-  <h1 id="result">Loading...</h1>
+<body id="cvbg">
+  <nav id="navbar">
+    <ul>
+      <li><a href="index.html">Showcase</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="mailto:kuutti.taavitsainen@icloud.com">Contact</a></li>
+    </ul>
+  </nav>
 
-  <script>
-    fetch("https://kudekubestudios.fi/kudenet/api/ping")
-    .then(x => x.text())
-    .then(html => {
-      document.getElementById("result").innerHTML = html
-    })
-  </script>
+  <div class="list">
+    <h1>My works</h1>
+    <div class="card" id="ikea">
+      <h1 class="cardTitle">IKEA Vantaa logistics</h1>
+      <h2 class="cardSubtitle">2025</h2>
+      <p class="cardParagraph">I worked at IKEA Vantaa logistics department during the summer of 2025.</p>
+    </div>
+    <div class="card" id="koulu">
+      <h1 class="cardTitle">Oulunkylän Yhteiskoulu</h1>
+      <h2 class="cardSubtitle">2023-</h2>
+      <p class="cardParagraph">My Secondary Upper School, where I've studied since 2023.</p>
+    </div>
+  </div>
 </body>
