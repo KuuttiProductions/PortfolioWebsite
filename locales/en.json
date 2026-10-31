@@ -1,0 +1,16 @@
+{
+  "page.notready" : "This page is not ready, yet.",
+  "nav.language" : "EN",
+  "nav.showroom" : "Showroom",
+  "nav.aboutme" : "About me",
+  "nav.cv" : "CV",
+  "nav.contact" : "Contact",
+  "cv.projects" : "Projects",
+  "cv.experiences" : "Experiences",
+  "cv.skills" : "Skills",
+  "inspiration.title" : "Inspiration",
+  "inspiration.subtitle" : "Building a fixed-wing UAV",
+  "inspiration.paragraph" : "More details soon.",
+  "loading" : "Loading...",
+  "loading.failed" : "Loading failed!"
+}

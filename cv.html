@@ -2,29 +2,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>Kuutti Taavitsainen - CV</title>
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script  src="cv.js"></script>
+  <script src="i18n.js"></script>
 </head>
 
 <body id="cvbg">
   <nav id="navbar">
-    <ul>
-      <li><a href="index.html">Showcase</a></li>
-      <li><a href="cv.html">CV</a></li>
-      <li><a href="mailto:kuutti.taavitsainen@icloud.com">Contact</a></li>
+    <ul id="navbarlist">
+      <li>
+        <ul class="navbargroup">
+          <li><p id="kuutti">Kuutti Taavitsainen</p></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="navbargroup">
+          <li><a id="showroom_btn" data-i18n="nav.showroom" href="index.html">Showroom</a></li>
+          <li><a id="aboutme_btn"  data-i18n="nav.aboutme"href="about.html">About me</a></li>
+          <li><a id="cv_btn"       data-i18n="nav.cv"href="cv.html">CV</a></li>
+          <li><a id="contact_btn"  data-i18n="nav.contact"href="mailto:kuutti.taavitsainen@icloud.com">Contact</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="navbargroup">
+          <li><button data-i18n="nav.language" id="language" onclick="toggleLanguage()"></button></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
-  <div class="list">
-    <h1>My works</h1>
-    <div class="card" id="ikea">
-      <h1 class="cardTitle">IKEA Vantaa logistics</h1>
-      <h2 class="cardSubtitle">2025</h2>
-      <p class="cardParagraph">I worked at IKEA Vantaa logistics department during the summer of 2025.</p>
+  <div id="cv">
+    <h1>CV</h1>
+    <div class="segmented">
+      <button data-tab="projects"    onclick="selectTab(this)" data-i18n="cv.projects"   id="projects" class="active" >Projects</button>
+      <button data-tab="experiences" onclick="selectTab(this)" data-i18n="cv.experiences"id="experiences">Experiences</button>
+      <button data-tab="skills"      onclick="selectTab(this)" data-i18n="cv.skills"     id="skills">Skills</button>
     </div>
-    <div class="card" id="koulu">
-      <h1 class="cardTitle">Oulunkylän Yhteiskoulu</h1>
-      <h2 class="cardSubtitle">2023-</h2>
-      <p class="cardParagraph">My Secondary Upper School, where I've studied since 2023.</p>
-    </div>
+    <div id="content"></div>
   </div>
 </body>

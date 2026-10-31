@@ -1,0 +1,16 @@
+{
+  "page.notready" : "Tämä sivu ei ole valmis, vielä.",
+  "nav.language" : "FI",
+  "nav.showroom" : "Esittely",
+  "nav.aboutme" : "Minusta",
+  "nav.cv" : "CV",
+  "nav.contact" : "Ota yhteyttä",
+  "cv.projects" : "Projektit",
+  "cv.experiences" : "Kokemukset",
+  "cv.skills" : "Taidot",  
+  "inspiration.title" : "Inspiraatio",
+  "inspiration.subtitle" : "Kiinteäsiipinen UAV",
+  "inspiration.paragraph" : "Lisätietoja pian.",
+  "loading" : "Ladataan...",
+  "loading.failed" : "Lataaminen epäonnistui!"
+}
